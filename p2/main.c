@@ -4,7 +4,7 @@ int main(void) {
   char a = 0;
   scanf("%d", &N);
   
-  for (int i = 0; i < N; i++) {
+  for (int i = 0; i <= N; i++) {
     scanf("%c", &a);
     
     if (a >= 'a' && a <= 'z') {

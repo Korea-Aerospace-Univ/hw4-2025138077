@@ -12,8 +12,6 @@ int main(void) {
     else if (guess < answer) {
       printf("%d<?\n", guess);
     }
-    else
-      break;
   } while(guess != answer);
   
   printf("%d==?\n", guess);

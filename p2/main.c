@@ -4,15 +4,15 @@ int main(void) {
   char a = 0;
   scanf("%d", &N);
   
-  for (int i = 0; i <= N; i++) {
+  for (int i = 0; i < N; i++) {
     scanf("%c", &a);
     
     if (a >= 'a' && a <= 'z') {
         count1 += 1;
-    }
-    else if (count1 > ch_count) {
-        ch_count = count1;
-        count1 = 0;
+        
+        if (count1 > ch_count) {
+            ch_count = count1;
+        }
     }
     else {
         count1 = 0;
@@ -20,10 +20,10 @@ int main(void) {
     
     if (a >= '0' && a <= '9') {
         count2 += 1;
-    }
-    else if (count2 > num_count) {
+        
+        if (count2 > num_count) {
         num_count = count2;
-        count2 = 0;
+        }
     }
     else {
         count2 = 0;
